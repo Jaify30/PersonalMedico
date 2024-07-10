@@ -1,0 +1,156 @@
+﻿<Window x:Class="PersonalMedico.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonalMedico"
+        mc:Ignorable="d"
+        Title="Personal Medico | Medicos" Height="900" Width="1600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Column="0" Background="Black">
+
+            <TextBlock Text="Ingreso de Personal Medico" Foreground="Orange" FontSize="25" HorizontalAlignment="Center">
+                <TextBlock.TextDecorations>
+                    <TextDecorationCollection>
+                        <TextDecoration Location="Underline"  PenThicknessUnit="FontRecommended">
+                            <TextDecoration.Pen>
+                                <Pen Brush="Gray"></Pen>
+                            </TextDecoration.Pen>
+                        </TextDecoration>
+                    </TextDecorationCollection>
+                </TextBlock.TextDecorations>
+            </TextBlock>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">ID</Label>
+            <TextBox Name="IdG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Nombre</Label>
+            <TextBox Name="NombreG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Apellido</Label>
+            <TextBox Name="ApellidoG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Provicia</Label>
+            <TextBox Name="ProvinciaG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Domicilio</Label>
+            <TextBox Name="DomicilioG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Localidad</Label>
+            <TextBox Name="LocalidadG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Especialidad</Label>
+            <TextBox Name="EspecialidadG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Dias de atencion</Label>
+                <Grid Grid.Row="1" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <CheckBox Name="AtencionLunes" Foreground="Orange">Lunes</CheckBox>
+                        <CheckBox Name="AtencionMartes" Foreground="Orange">Martes</CheckBox>
+                        <CheckBox Name="AtencionMiercoles"  Foreground="Orange">Miercoles</CheckBox>
+                        <CheckBox Name="AtencionJueves" Foreground="Orange">Jueves</CheckBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <CheckBox Name="AtencionViernes" Foreground="Orange">Viernes</CheckBox>
+                        <CheckBox Name="AtencionSabados" Foreground="Orange">Sabado</CheckBox>
+                        <CheckBox Name="AtencionDomingos" Foreground="Orange">Domingos</CheckBox>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Dias de guardia</Label>
+                <Grid Grid.Row="1" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <CheckBox Name="GuardiaLunes" Foreground="Orange">Lunes</CheckBox>
+                        <CheckBox Name="GuardianMartes" Foreground="Orange">Martes</CheckBox>
+                        <CheckBox Name="GuardiaMiercoles"  Foreground="Orange">Miercoles</CheckBox>
+                        <CheckBox Name="GuardiaJueves" Foreground="Orange">Jueves</CheckBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <CheckBox Name="GuardiaViernes" Foreground="Orange">Viernes</CheckBox>
+                        <CheckBox Name="GuardiaSabados" Foreground="Orange">Sabado</CheckBox>
+                        <CheckBox Name="GuardiaDomingos" Foreground="Orange">Domingos</CheckBox>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Fecha de ingreso</Label>
+            <DatePicker Name="FechaIngresoG"  Width="400" Height="30" FontSize="17" Background="Gray"></DatePicker>
+
+            <Label HorizontalAlignment="Center" Foreground="Orange" FontSize="17">Sueldo</Label>
+            <TextBox Name="SueldoG" Width="400" Height="30" FontSize="17" Background="Gray"></TextBox>
+
+            <Button Margin="80,30" HorizontalAlignment="Center" FontSize="20" Content="Agregar Personal Medico" Click="Button_Click"></Button>
+        </StackPanel>
+
+        <Grid Grid.Column="1" Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid HorizontalAlignment="Left" Grid.Row="0" >
+                <Button Name="Ver" Margin="0,0,200,0" Height="30" Width="80" Content="Ver empleados" FontSize="10" Click="Ver_Click"></Button>
+                <Button Name="Eliminar" Margin="0,0,0,0" Height="30" Width="100" Content="Eliminar empleados" FontSize="10" Click="Eliminar_Click"></Button>
+                <Button Name="Modificar" Margin="220,0,0,0" Height="30" Width="100" Content="Modificar empleados" FontSize="10" Click="Modificar_Click"></Button>
+            </Grid>
+
+            <DataGrid CanUserAddRows="False" SelectionChanged="ViewData_SelectionChanged" Name="ViewData" Grid.Row="1" Background="Orange" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" RenderTransformOrigin="0.5,0.5" HorizontalGridLinesBrush="Black">
+                <DataGrid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0"/>
+                    </TransformGroup>
+                </DataGrid.RenderTransform>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="ID" Binding="{Binding Id}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="NOMBRE" Binding="{Binding Nombre}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="APELLIDO" Binding="{Binding Apellido}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="PROVINCIA" Binding="{Binding Provincia}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="DOMICILIO" Binding="{Binding Domicilio}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="LOCALIDAD" Binding="{Binding Localidad}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="ESPECIALIDAD" Binding="{Binding Especialidad}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="DIAS ATENCION" Binding="{Binding DiasDeAtencion}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="DIAS GUARDIA" Binding="{Binding DiasDeGuardia}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="FECHA DE INGRESO" Binding="{Binding FechaIngreso}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="SUELDO" Binding="{Binding Sueldo}"></DataGridTextColumn>
+                </DataGrid.Columns>
+
+
+            </DataGrid>
+
+        </Grid>
+
+
+
+    </Grid>
+</Window>

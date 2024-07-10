@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C# 2024\\PersonalMedico\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2899D318-7E87-452E-836E-529F21208EA8}|PersonalMedico.csproj|d:\\c# 2024\\personalmedico\\empleadoset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2899D318-7E87-452E-836E-529F21208EA8}|PersonalMedico.csproj|solutionrelative:empleadoset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpleadoSet.cs",
+              "DocumentMoniker": "D:\\C# 2024\\PersonalMedico\\EmpleadoSet.cs",
+              "RelativeDocumentMoniker": "EmpleadoSet.cs",
+              "ToolTip": "D:\\C# 2024\\PersonalMedico\\EmpleadoSet.cs",
+              "RelativeToolTip": "EmpleadoSet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T17:45:25.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

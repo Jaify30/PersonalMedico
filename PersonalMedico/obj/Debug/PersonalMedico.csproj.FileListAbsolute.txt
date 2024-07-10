@@ -1,0 +1,15 @@
+D:\C# 2024\PersonalMedico\bin\Debug\PersonalMedico.exe.config
+D:\C# 2024\PersonalMedico\bin\Debug\PersonalMedico.exe
+D:\C# 2024\PersonalMedico\bin\Debug\PersonalMedico.pdb
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.csproj.AssemblyReference.cache
+D:\C# 2024\PersonalMedico\obj\Debug\MainWindow.g.cs
+D:\C# 2024\PersonalMedico\obj\Debug\App.g.cs
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico_MarkupCompile.cache
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico_MarkupCompile.lref
+D:\C# 2024\PersonalMedico\obj\Debug\MainWindow.baml
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.g.resources
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.Properties.Resources.resources
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.csproj.GenerateResource.cache
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.csproj.CoreCompileInputs.cache
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.exe
+D:\C# 2024\PersonalMedico\obj\Debug\PersonalMedico.pdb
