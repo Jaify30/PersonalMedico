@@ -12,7 +12,7 @@ namespace PersonalMedico.BD
 
         public static SqlConnection Conection()//Hacemos una funcion que retorne un SqlConnection
         {
-            SqlConnection conexion = new SqlConnection("Server=DESKTOP-3MSS1LQ\\JAIFY3; Database=PersonalMedico; Trusted_Connection=true; Integrated Security=SSPI;Persist Security Info=False;");//Trusted_Connection utiliza al usuario que inicio sesion en windows
+            SqlConnection conexion = new SqlConnection("Server=; Database=PersonalMedico; Trusted_Connection=true; Integrated Security=SSPI;Persist Security Info=False;");//Trusted_Connection utiliza al usuario que inicio sesion en windows
             conexion.Open();
 
             return conexion;
